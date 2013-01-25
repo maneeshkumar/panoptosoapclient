@@ -1,0 +1,297 @@
+package com.cengage.nextbook.panopto.soapservice.usermgt;
+
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlType;
+
+/**
+ * <p>
+ * Java class for User complex type.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="User">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="Email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="EmailSessionNotifications" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="FirstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="GroupMemberships" type="{http://schemas.microsoft.com/2003/10/Serialization/Arrays}ArrayOfguid" minOccurs="0"/>
+ *         &lt;element name="LastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="SystemRole" type="{http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40}SystemRole" minOccurs="0"/>
+ *         &lt;element name="UserBio" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="UserId" type="{http://schemas.microsoft.com/2003/10/Serialization/}guid" minOccurs="0"/>
+ *         &lt;element name="UserKey" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="UserSettingsUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "User",
+         namespace = "http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40",
+         propOrder = {"email",
+                      "emailSessionNotifications",
+                      "firstName",
+                      "groupMemberships",
+                      "lastName",
+                      "systemRole",
+                      "userBio",
+                      "userId",
+                      "userKey",
+                      "userSettingsUrl"})
+public class User {
+    
+    @XmlElementRef(name = "Email",
+                   namespace = "http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40",
+                   type = JAXBElement.class,
+                   required = false)
+    protected JAXBElement<String> email;
+    @XmlElement(name = "EmailSessionNotifications")
+    protected Boolean emailSessionNotifications;
+    @XmlElementRef(name = "FirstName",
+                   namespace = "http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40",
+                   type = JAXBElement.class,
+                   required = false)
+    protected JAXBElement<String> firstName;
+    @XmlElementRef(name = "GroupMemberships",
+                   namespace = "http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40",
+                   type = JAXBElement.class,
+                   required = false)
+    protected JAXBElement<ArrayOfguid> groupMemberships;
+    @XmlElementRef(name = "LastName",
+                   namespace = "http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40",
+                   type = JAXBElement.class,
+                   required = false)
+    protected JAXBElement<String> lastName;
+    @XmlElement(name = "SystemRole")
+    protected SystemRole systemRole;
+    @XmlElementRef(name = "UserBio",
+                   namespace = "http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40",
+                   type = JAXBElement.class,
+                   required = false)
+    protected JAXBElement<String> userBio;
+    @XmlElement(name = "UserId")
+    protected String userId;
+    @XmlElementRef(name = "UserKey",
+                   namespace = "http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40",
+                   type = JAXBElement.class,
+                   required = false)
+    protected JAXBElement<String> userKey;
+    @XmlElementRef(name = "UserSettingsUrl",
+                   namespace = "http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40",
+                   type = JAXBElement.class,
+                   required = false)
+    protected JAXBElement<String> userSettingsUrl;
+    
+    /**
+     * Gets the value of the email property.
+     * 
+     * @return possible object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public JAXBElement<String> getEmail() {
+        return email;
+    }
+    
+    /**
+     * Sets the value of the email property.
+     * 
+     * @param value allowed object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public void setEmail(JAXBElement<String> value) {
+        this.email = value;
+    }
+    
+    /**
+     * Gets the value of the emailSessionNotifications property.
+     * 
+     * @return possible object is {@link Boolean }
+     * 
+     */
+    public Boolean isEmailSessionNotifications() {
+        return emailSessionNotifications;
+    }
+    
+    /**
+     * Sets the value of the emailSessionNotifications property.
+     * 
+     * @param value allowed object is {@link Boolean }
+     * 
+     */
+    public void setEmailSessionNotifications(Boolean value) {
+        this.emailSessionNotifications = value;
+    }
+    
+    /**
+     * Gets the value of the firstName property.
+     * 
+     * @return possible object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public JAXBElement<String> getFirstName() {
+        return firstName;
+    }
+    
+    /**
+     * Sets the value of the firstName property.
+     * 
+     * @param value allowed object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public void setFirstName(JAXBElement<String> value) {
+        this.firstName = value;
+    }
+    
+    /**
+     * Gets the value of the groupMemberships property.
+     * 
+     * @return possible object is {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
+     * 
+     */
+    public JAXBElement<ArrayOfguid> getGroupMemberships() {
+        return groupMemberships;
+    }
+    
+    /**
+     * Sets the value of the groupMemberships property.
+     * 
+     * @param value allowed object is {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
+     * 
+     */
+    public void setGroupMemberships(JAXBElement<ArrayOfguid> value) {
+        this.groupMemberships = value;
+    }
+    
+    /**
+     * Gets the value of the lastName property.
+     * 
+     * @return possible object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public JAXBElement<String> getLastName() {
+        return lastName;
+    }
+    
+    /**
+     * Sets the value of the lastName property.
+     * 
+     * @param value allowed object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public void setLastName(JAXBElement<String> value) {
+        this.lastName = value;
+    }
+    
+    /**
+     * Gets the value of the systemRole property.
+     * 
+     * @return possible object is {@link SystemRole }
+     * 
+     */
+    public SystemRole getSystemRole() {
+        return systemRole;
+    }
+    
+    /**
+     * Sets the value of the systemRole property.
+     * 
+     * @param value allowed object is {@link SystemRole }
+     * 
+     */
+    public void setSystemRole(SystemRole value) {
+        this.systemRole = value;
+    }
+    
+    /**
+     * Gets the value of the userBio property.
+     * 
+     * @return possible object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public JAXBElement<String> getUserBio() {
+        return userBio;
+    }
+    
+    /**
+     * Sets the value of the userBio property.
+     * 
+     * @param value allowed object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public void setUserBio(JAXBElement<String> value) {
+        this.userBio = value;
+    }
+    
+    /**
+     * Gets the value of the userId property.
+     * 
+     * @return possible object is {@link String }
+     * 
+     */
+    public String getUserId() {
+        return userId;
+    }
+    
+    /**
+     * Sets the value of the userId property.
+     * 
+     * @param value allowed object is {@link String }
+     * 
+     */
+    public void setUserId(String value) {
+        this.userId = value;
+    }
+    
+    /**
+     * Gets the value of the userKey property.
+     * 
+     * @return possible object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public JAXBElement<String> getUserKey() {
+        return userKey;
+    }
+    
+    /**
+     * Sets the value of the userKey property.
+     * 
+     * @param value allowed object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public void setUserKey(JAXBElement<String> value) {
+        this.userKey = value;
+    }
+    
+    /**
+     * Gets the value of the userSettingsUrl property.
+     * 
+     * @return possible object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public JAXBElement<String> getUserSettingsUrl() {
+        return userSettingsUrl;
+    }
+    
+    /**
+     * Sets the value of the userSettingsUrl property.
+     * 
+     * @param value allowed object is {@link JAXBElement }{@code <}{@link String }{@code >}
+     * 
+     */
+    public void setUserSettingsUrl(JAXBElement<String> value) {
+        this.userSettingsUrl = value;
+    }
+    
+}
